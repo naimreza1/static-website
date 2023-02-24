@@ -29,9 +29,10 @@ a{
     padding: 40px 20px;
 }
 .header h1{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 300;
     color: #424242;
+    display: inline-block;
 }
 .header h1 a{
     text-decoration: none;
