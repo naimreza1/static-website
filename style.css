@@ -54,9 +54,10 @@ a{
 }
 .menu ul li a{
     display: inline-block;
-    padding: 5px 10px;
+    padding: 3px 10px;
     color: #424242;
     text-decoration: none;
+    font-size: 15px;
 }
 .active{
     color: #fff !important;
@@ -106,5 +107,8 @@ a{
 @media only screen and (max-width: 670px){
     .nr {
         flex-direction: column;
+    }
+    .header h1 {
+        font-size: 23px;
     }
 }
