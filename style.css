@@ -8,23 +8,24 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-wrap: break-word;
 }
+a{
+    color: #119af0;
+}
 .container{
     max-width: 900px;
     margin: auto;
 }
 #header{
-    background-color: #e3e1e1;
+    background-color: #efefef;
 }
 #header .nr{
     flex-direction: column;
-    gap: 0;
 }
 .nr{
     display: flex;
-    gap: 20px;
 }
 .header{
-    background-color: #ccc;
+    background-color: #d3d3d3;
     padding: 40px 20px;
 }
 .header h1{
@@ -33,7 +34,6 @@ body{
     color: #424242;
 }
 .header h1 a{
-    color: #119af0;
     text-decoration: none;
 }
 .header h1:hover a{
@@ -43,7 +43,7 @@ body{
     padding: 10px 20px;
     border-top: 1px solid #bbb;
     border-bottom: 1px solid #bbb;
-    background-color: #ddd;
+    background-color: #e0e0e0;
 }
 .menu ul{
     list-style: none;
@@ -57,4 +57,49 @@ body{
     padding: 5px 10px;
     color: #424242;
     text-decoration: none;
+}
+.active{
+    color: #fff !important;
+    background-color: #119af0;
+    border-radius: 5px;
+}
+/* contect */
+.left{
+  flex: 1 0 35%;
+  margin: 20px;
+}
+.right{
+  flex: 1 0 65%;
+  margin: 20px;
+}
+.right b{
+    font-weight: 600;
+}
+.right p,
+.right ul,
+.right h2{
+    margin-bottom: 20px;
+}
+#content h2{
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+#content ul li {
+    margin-bottom: 10px;
+    list-style: auto;
+    list-style-position: inside;
+}
+#content p,
+#content ul{
+    font-size: 15px;
+    color: #424242;
+    line-height: 1.6em;
+}
+.info{
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 20px
 }
