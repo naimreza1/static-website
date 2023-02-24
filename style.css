@@ -8,3 +8,53 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-wrap: break-word;
 }
+.container{
+    max-width: 900px;
+    margin: auto;
+}
+#header{
+    background-color: #e3e1e1;
+}
+#header .nr{
+    flex-direction: column;
+    gap: 0;
+}
+.nr{
+    display: flex;
+    gap: 20px;
+}
+.header{
+    background-color: #ccc;
+    padding: 40px 20px;
+}
+.header h1{
+    font-size: 30px;
+    font-weight: 300;
+    color: #424242;
+}
+.header h1 a{
+    color: #119af0;
+    text-decoration: none;
+}
+.header h1:hover a{
+    color: #bbb;
+}
+.menu{
+    padding: 10px 20px;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    background-color: #ddd;
+}
+.menu ul{
+    list-style: none;
+    float: right;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: #424242;
+    text-decoration: none;
+}
