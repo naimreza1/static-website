@@ -116,6 +116,13 @@ b{
     padding: 20px;
     margin-bottom: 20px
 }
+@media only screen and (max-width: 900px){
+    #content p,
+    #content ul,
+    #content a{
+        text-align: justify;
+    }
+}
 @media only screen and (max-width: 670px){
     .nr {
         flex-direction: column;
