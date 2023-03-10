@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 130px;
+    background: url(bg.jpg);
+    position: relative;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 0 7px 7px;
+    -webkit-border-radius: 0 0 7px 7px;
+    -moz-border-radius: 0 0 7px 7px;
+    -ms-border-radius: 0 0 7px 7px;
+    -o-border-radius: 0 0 7px 7px;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #EE3E3E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+body,
+.nr-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+.head{
+    width: 220px;
+    height: 50px;
+    background: url(bg.jpg);
+    position: relative;
+    box-shadow: 0px 2px 5px 0px #565656;
+    cursor: pointer;
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px 7px 0 0;
+    -webkit-border-radius: 7px 7px 0 0;
+    -moz-border-radius: 7px 7px 0 0;
+    -ms-border-radius: 7px 7px 0 0;
+    -o-border-radius: 7px 7px 0 0;
+}
+.head::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #EE3E3E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.hed-top{
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 20px solid #EE3E3E;
+    border-left: 20px solid #EE3E3E;
+    position: absolute;
+    top: -10px;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.content{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    font-size: 20px;
+    display: none;
+}
+.active{
+    display: block;
+    transition-duration: 5ms;
+}
+.head::after,
+.box::after{
+    box-shadow: 2px 0 5px #07070743;
+}
